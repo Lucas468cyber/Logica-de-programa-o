@@ -1,0 +1,63 @@
+#1 - Direito
+ganhos = int(input("Quantidade de processos ganhos: "))
+perdidos = int(input("Quantidade de processos perdidos: "))
+diferenca = ganhos - perdidos
+print("diferença: ", diferenca)
+
+if diferenca > 10:
+   print("Desempenho positivo: ", diferenca)
+else:
+   print("Desempenho negativo: ", diferenca)
+
+
+#2 - Games
+ 
+nivel = int(input("\nInsira o seu nivel: "))
+quantidade_de_experiência = int(input("Insira a sua quantidade de experiência: "))
+quantidade_de_pontos = quantidade_de_experiência * 100
+ 
+if quantidade_de_experiência > 100:
+  print("Avançado")
+else:
+  print("Não Avançado")
+
+#3 - veiculos
+litros = int(input("\nInsira a quantidade de litros: "))
+preco_por_litro = int(input("Insira o preço por litro do combustivel: R$"))
+valor_total = litros * preco_por_litro
+
+if valor_total > 200:
+    print("O valor excedeu R$200")
+else:
+    print("O valor não excedeu R$200")
+
+  
+# 4 - Joias
+preco_inicial = float(input("\nInforme o preço inicial da joia: R$ "))
+aumento_percentual = float(input("Informe o percentual de aumento (%): "))
+reajuste = preco_inicial * (aumento_percentual / 100)
+novo_valor = preco_inicial + reajuste
+
+print("Valor do reajuste aplicado: R$", reajuste)
+print("O novo valor final da joia é: R$", novo_valor)
+
+resultado = (novo_valor + reajuste)
+
+# 5- Educação
+nota1 = float(input("\nDigite a primeira nota do estudante: "))
+nota2 = float(input("Digite a segunda nota do estudante: "))
+media = (nota1 + nota2)/2
+if media > 6:
+    print("A média é maior do que 6")
+elif media == 6:
+    print("A média é igual a 6")
+else:
+    print("A media é menor do que 6")
+
+
+#6- Pesquisa Clínica
+idade = int(input("\nDigite sua idade: "))
+if idade > 18 and idade < 60:
+    print("Você está apto para fazer a pesquisa")
+else:
+    print("Você não está apto para fazer a pesquisa")
